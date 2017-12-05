@@ -35,28 +35,28 @@ public class ToGenTestD implements SpecUnitTest {
 
 	@Test
 	public void testAddThenMultiA() {
-		System.out.println("in test addThenMultiA D");
+		//System.out.println("in test addThenMultiA D");
 		int result = toGenInstance.addThenMulti(1, 2, 3, 4);
 		assertEquals(21, result);
 	}
 	
 	@Test
 	public void testAddThenMultiB() {
-		System.out.println("in test addThenMultiB D");
+		//System.out.println("in test addThenMultiB D");
 		int result = toGenInstance.addThenMulti(1, 0, 3, 4);
 		assertEquals(7, result);
 	}
 	
 	@Test
 	public void testAddThenMultiC() {
-		System.out.println("in test addThenMultiC D");
+		//System.out.println("in test addThenMultiC D");
 		int result = toGenInstance.addThenMulti(0, 0, 3, 4);
 		assertEquals(0, result);
 	}
 	
 	@Test
 	public void testAddThenMultiD() {
-		System.out.println("in test addThenMultiD D");
+		//System.out.println("in test addThenMultiD D");
 		int result = toGenInstance.addThenMulti(8, 2, 3, 4);
 		assertEquals(70, result);
 	}

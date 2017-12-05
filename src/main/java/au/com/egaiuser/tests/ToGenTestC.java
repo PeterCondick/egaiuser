@@ -35,28 +35,28 @@ public class ToGenTestC implements SpecUnitTest {
 
 	@Test
 	public void testAddPlusOneA() {
-		System.out.println("in test addPlusOneA C");
+		//System.out.println("in test addPlusOneA C");
 		int result = toGenInstance.addPlusOne(1, 2);
 		assertEquals(4, result);
 	}
 	
 	@Test
 	public void testAddPlusOneB() {
-		System.out.println("in test addPlusOneB C");
+		//System.out.println("in test addPlusOneB C");
 		int result = toGenInstance.addPlusOne(0, 0);
 		assertEquals(1, result);
 	}
 	
 	@Test
 	public void testAddPlusOneC() {
-		System.out.println("in test addPlusOneC C");
+		//System.out.println("in test addPlusOneC C");
 		int result = toGenInstance.addPlusOne(2, 2);
 		assertEquals(5, result);
 	}
 	
 	@Test
 	public void testAddPlusOneD() {
-		System.out.println("in test addPlusOneD C");
+		//System.out.println("in test addPlusOneD C");
 		int result = toGenInstance.addPlusOne(5, 7);
 		assertEquals(13, result);
 	}

@@ -35,9 +35,16 @@ public class ToGenTestB implements SpecUnitTest {
 
 	@Test
 	public void testAdd() {
-		System.out.println("in test add B");
+		//System.out.println("in test add B");
 		int result = toGenInstance.add(1, 2);
 		assertEquals(3, result);
+	}
+	
+	@Test
+	public void testAddX() {
+		//System.out.println("in test addX B");
+		int result = toGenInstance.add(3, 4);
+		assertEquals(7, result);
 	}
 	
 }

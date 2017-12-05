@@ -35,14 +35,14 @@ public class ToGenTest implements SpecUnitTest {
 
 	@Test
 	public void testAdd() {
-		System.out.println("In test Add");
+		//System.out.println("In test Add");
 		int result = toGenInstance.add(1, 1);
 		assertEquals(2, result);
 	}
 
 	@Test
 	public void testAddAgain() {
-		System.out.println("In test AddAgain");
+		//System.out.println("In test AddAgain");
 		int result = toGenInstance.add(1, 10);
 		assertEquals(11, result);
 	}
