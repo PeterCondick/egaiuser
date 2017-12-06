@@ -61,4 +61,24 @@ public class ToGenTestC implements SpecUnitTest {
 		assertEquals(13, result);
 	}
 	
+	@Test
+	public void testAddPlusOneE() {
+		//System.out.println("in test addPlusOneD C");
+		int result = toGenInstance.addPlusOne(10, 20);
+		assertEquals(31, result);
+	}
+	
+	@Test
+	public void testAddPlusOneF() {
+		//System.out.println("in test addPlusOneD C");
+		int result = toGenInstance.addPlusOne(10, 20);
+		assertTrue(result > 30);
+	}
+	
+	@Test
+	public void testAddPlusOneG() {
+		//System.out.println("in test addPlusOneD C");
+		int result = toGenInstance.addPlusOne(10, 20);
+		assertTrue(result < 32);
+	}
 }
