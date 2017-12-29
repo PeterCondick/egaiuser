@@ -13,7 +13,9 @@ public class EpigaiRunner {
 
 		//generateAdd();
 		//generateAddPlusOne();
-		generateAddThenMulti();
+		//generateAddThenMulti();
+		generateAddToMax();
+		//generateDivide();
 		
 		System.out.println("called the generator");
 		
@@ -64,5 +66,36 @@ public class EpigaiRunner {
 		
 		Generator.generate(interfaceToImpl, methodToImpl, testA);
 	}
+	
+	private static void generateAddToMax() {
+		Class interfaceToImpl = ToGen.class;
+		Method methodToImpl = null;
+		try {
+			methodToImpl = interfaceToImpl.getMethod("addToMax", new Class[] {int.class, int.class, int.class});
+		} catch (NoSuchMethodException nsme) {
+			System.out.println("caught a nsme");
+			nsme.printStackTrace();
+		}
+		
+		SpecUnitTest testA = new au.com.egaiuser.tests.ToGenTestE();
+		
+		Generator.generate(interfaceToImpl, methodToImpl, testA);
+	}
+	
+	private static void generateDivide() {
+		Class interfaceToImpl = ToGen.class;
+		Method methodToImpl = null;
+		try {
+			methodToImpl = interfaceToImpl.getMethod("divide", new Class[] {int.class, int.class});
+		} catch (NoSuchMethodException nsme) {
+			System.out.println("caught a nsme");
+			nsme.printStackTrace();
+		}
+		
+		SpecUnitTest testA = new au.com.egaiuser.tests.ToGenTestF();
+		
+		Generator.generate(interfaceToImpl, methodToImpl, testA);
+	}
+	
 	
 }
