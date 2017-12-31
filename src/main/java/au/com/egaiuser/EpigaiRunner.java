@@ -12,9 +12,9 @@ public class EpigaiRunner {
 		System.out.println("about to call the generator");
 
 		//generateAdd();
-		//generateAddPlusOne();
+		generateAddPlusOne();
 		//generateAddThenMulti();
-		generateAddToMax();
+		//generateAddToMax();
 		//generateDivide();
 		
 		System.out.println("called the generator");
