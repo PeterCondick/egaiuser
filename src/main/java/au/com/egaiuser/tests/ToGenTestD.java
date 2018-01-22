@@ -95,4 +95,12 @@ public class ToGenTestD implements SpecUnitTest {
 		int result = toGenInstance.addThenMulti(4, 1, 3, 4);
 		assertEquals(35, result);
 	}
+	
+	@Test
+	public void testAddThenMultiK() {
+		//System.out.println("in test addThenMultiD D");
+		int result = toGenInstance.addThenMulti(2, 2, 3, 3);
+		assertEquals(24, result);
+	}
+	
 }

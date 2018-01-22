@@ -12,4 +12,6 @@ public interface ToGen {
 	
 	public int divide(int a, int b);
 	
+	public int addIfNotEqual(int a, int b);
+	
 }

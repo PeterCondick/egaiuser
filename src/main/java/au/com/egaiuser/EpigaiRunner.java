@@ -9,15 +9,16 @@ public class EpigaiRunner {
 
 	public static void main(String[] args) {
 		
-		System.out.println("about to call the generator");
+		System.out.println("EpigaiRunner about to call the generator");
 
 		//generateAdd();
-		generateAddPlusOne();
-		//generateAddThenMulti();
+		//generateAddPlusOne();
+		generateAddThenMulti();
 		//generateAddToMax();
 		//generateDivide();
+		//generateAddIfNotEqual();
 		
-		System.out.println("called the generator");
+		System.out.println("EpigaiRunner called the generator");
 		
 	}
 
@@ -97,5 +98,19 @@ public class EpigaiRunner {
 		Generator.generate(interfaceToImpl, methodToImpl, testA);
 	}
 	
+	private static void generateAddIfNotEqual() {
+		Class interfaceToImpl = ToGen.class;
+		Method methodToImpl = null;
+		try {
+			methodToImpl = interfaceToImpl.getMethod("addIfNotEqual", new Class[] {int.class, int.class});
+		} catch (NoSuchMethodException nsme) {
+			System.out.println("caught a nsme");
+			nsme.printStackTrace();
+		}
+		
+		SpecUnitTest testA = new au.com.egaiuser.tests.ToGenTestG();
+		
+		Generator.generate(interfaceToImpl, methodToImpl, testA);
+	}
 	
 }
